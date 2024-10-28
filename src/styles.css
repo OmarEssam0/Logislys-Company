@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+}
+:root{
+  --main-color:#5200aa;
+  --secound-color:rgb(245, 185, 7);
+}
+.main-linergradiant{
+  background: linear-gradient(252.56deg, var(--main-color) 14.08%, #290055 111.95%);
+}
+.btn-main{
+  background: var(--main-color);
+  color: white;
+  padding: 15px 15px;
+}
+.main-color{
+  color: var(--main-color);
+}
+.secound-color{
+  color: var(--secound-color);
+}

@@ -1,0 +1,16 @@
+.gps-icon i {
+  border: 2px dashed rgba(229, 229, 229, 0.671);
+  border-radius: 3px;
+  padding: 8px;
+  position: relative;
+}
+
+.gps-icon i::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  right: -30px;
+  top: 50%;
+  background-color: rgba(229, 229, 229, 0.671);;
+}

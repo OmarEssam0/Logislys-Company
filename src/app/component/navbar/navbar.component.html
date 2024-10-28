@@ -1,0 +1,105 @@
+<header class="main-header">
+  <div class="head-inner d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <a href="#">
+        <img
+          src="assets/Image/Logo/35592c5b-d2dd-4fe2-bce2-9572a4a21789-removebg-preview.webp"
+          alt="Logislys-logo"
+          class="img-fluid"
+        />
+      </a>
+    </div>
+    <div class="main-menu">
+      <ul class="list-unstyled d-flex align-items-center gap-3">
+        <li>
+          <a href="#"> Home </a>
+        </li>
+        <li>
+          <a href="#"> About Us </a>
+        </li>
+        <li>
+          <a href="#"> Services </a>
+        </li>
+        <li>
+          <a href="#"> Projects </a>
+        </li>
+        <li>
+          <a href="#"> Blog </a>
+        </li>
+        <li>
+          <a href="#"> Contact Us </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="extra-action d-flex justify-content-between align-items-center gap-3"
+    >
+      <button class="btn btn-main">Order Service</button>
+      <div class="call d-flex justify-content-around align-items-center gap-2">
+        <div class="c-icon d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-phone text-white"></i>
+        </div>
+        <div class="c-data">
+          <a href="tel:54 335 6034">
+            <span class="text-muted d-block"> Phone </span>
+            <span class="text-black"> 54 335 6034 </span>
+          </a>
+        </div>
+      </div>
+      <div (click)="showElement()" class="op-sidebar">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<div #mySideBar class="nav-sidebar ">
+  <div class="inner">
+    <button (click)="closeElement()" class="close-btn btn text-white position-relative w-100">
+      <i class="fa-solid fa-xmark fs-4"></i>
+    </button>
+    <div class="s-logo">
+      <a href="#">
+        <img
+          src="assets/Image/Logo/35592c5b-d2dd-4fe2-bce2-9572a4a21789-removebg-preview.webp"
+          alt="Logo"
+          class="img-fluid"
+        />
+      </a>
+    </div>
+    <div class="s-links py-5">
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Projects</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="s-email py-5 text-white">
+      <div class="email mb-3">
+        <i class="fa-solid fa-envelope mb-2 d-block"></i>
+        <a href="#" class="text-white">{{email}}</a>
+      </div>
+      <div class="phone">
+        <i class="fa-solid fa-phone mb-2 d-block"></i>
+        <a href="tel:+966543356034" class="text-white">543356034</a>
+      </div>
+    </div>
+  </div>
+</div>

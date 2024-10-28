@@ -1,0 +1,18 @@
+.services-icon i{
+  border: 2px dashed #5200aa7e;
+  border-radius: 8px;
+  padding: 12px;
+  position: relative;
+}
+.services-icon i::after{
+content: '';
+position: absolute;
+width: 2px;
+height: 30px;
+bottom: -30px;
+left: 50%;
+background-color: #ae6bf57e;
+}
+.services-content p{
+  line-height: 2;
+}

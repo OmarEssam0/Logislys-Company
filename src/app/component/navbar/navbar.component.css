@@ -1,0 +1,134 @@
+.main-header{
+  padding: 0px 40px;
+}
+.main-menu ul li a{
+  color: #333;
+  transition: all .3s;
+    padding: 10px 0;
+    position: relative;
+    font-weight: bold;
+}
+.logo img{
+  width:200px;
+  height: 150px;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  transition: all .3s;
+  background: var(--main-color);
+  bottom: 0;
+}
+ul li a:hover{
+  color: var(--main-color);
+}
+.main-menu ul li a:hover::after{
+  width: 100%;
+}
+
+.c-icon{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: var(--main-color);
+}
+.op-sidebar span:nth-child(1){
+  width: 50%;
+}
+.op-sidebar span:nth-child(2){
+  width: 20%;
+}
+.op-sidebar span{
+  background: var(--main-color);
+  height: 2px;
+  transition: .3s;
+
+}
+.op-sidebar:hover span:nth-child(2){
+ width: 50%;
+}
+.op-sidebar {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all .3s;
+  row-gap: 5px;
+  cursor: pointer;
+}
+.nav-sidebar {
+    background: linear-gradient(252.56deg, var(--main-color) 14.08%, #290055 111.95%);
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    padding: 35px 25px;
+    transition: all .3s;
+    transform: translatex(120%);
+    z-index: 22;
+}
+.active::after{
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: #00000038;
+  z-index: -1111;
+}
+
+.active{
+transition: .3s;
+    transform: none;
+}
+.close-btn i{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.s-logo a img{
+  height: 255px;
+}
+.s-logo , .s-links{
+  position: relative;
+}
+.s-logo::before , .s-links::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.418);
+  height: 1px;
+}
+.nav-sidebar ul li a{
+  color: white;
+  margin-bottom: 15px;
+  display: block;
+  font-weight:bold ;
+}
+.op-sidebar{
+  display: none;
+}
+@media screen and (max-width: 787px) {
+  .main-menu {
+    display: none;
+  }
+  .extra-action button , .extra-action .call{
+    display: none !important;
+  }
+  .op-sidebar{
+    display: flex;
+  }
+}

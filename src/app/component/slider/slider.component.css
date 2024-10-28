@@ -1,0 +1,13 @@
+.home {
+  height: calc(100vh - 130px);
+}
+.inner-home h1{
+  letter-spacing: 20px;
+}
+.inner-home p{
+  letter-spacing: 2px;
+
+}
+.btn{
+  width: fit-content !important;
+}
